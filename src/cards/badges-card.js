@@ -65,7 +65,7 @@ function getCardColors({
   return { titleColor, iconColor, textColor, bgColor, borderColor };
 }
 
-const renderBadgesCard = (badges, theme="default") => {
+const renderBadgesCard = (badges, theme="default", maxResults=10) => {
     // console.log(`badges-card: BEGIN`);
     // const theme = "default";
 
@@ -96,7 +96,7 @@ const renderBadgesCard = (badges, theme="default") => {
 
     // badges.data.forEach(function (item, i ) {
     // for (const item of badges.data) {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < maxResults; i++) {
         certItems += `<text x="0" y="${certItemPropY}" class="cert-text">${badges.data[i].badge_template.name}</text>`;
         certItemPropY += 20;   
     }

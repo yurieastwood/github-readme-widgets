@@ -31,6 +31,28 @@ Use `&theme=THEME_NAME` parameter
 
 You can look at a preview for [all available themes](./themes/README.md) or checkout the [theme config file](./themes/index.js) & **you can also contribute new themes** if you like :D
 
+## Sort Mode 
+
+Credly accepts two sorting modes, Most Popular (default) and Most Recent
+Use `&sort=SORT_MODE` parameter
+
+```md
+[![Certifications](https://github-readme-widgets.vercel.app/api?username=ashishsinghbaghel&sort=-state_updated_at)](https://github.com/mechdeveloper/github-readme-widgets)
+```
+
+[![Certifications](https://github-readme-widgets.vercel.app/api?username=ashishsinghbaghel&sort=-state_updated_at)](https://github.com/mechdeveloper/github-readme-widgets)
+
+## Max Results
+
+By default 10 certifications will be shown, to specify a number
+Use `&maxResults=MAX_RESULTS` parameter
+
+```md
+[![Certifications](https://github-readme-widgets.vercel.app/api?username=ashishsinghbaghel&maxResults=8)](https://github.com/mechdeveloper/github-readme-widgets)
+```
+
+[![Certifications](https://github-readme-widgets.vercel.app/api?username=ashishsinghbaghel&maxResults=8)](https://github.com/mechdeveloper/github-readme-widgets)
+
 ## Support the project
 
 You can use this service for free.

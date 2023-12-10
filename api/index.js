@@ -6,7 +6,8 @@ export default async function handler(req, res) {
     const { 
       username,
       sort,
-      theme
+      theme,
+      maxResults
     } = req.query;
 
     try {
@@ -22,7 +23,7 @@ export default async function handler(req, res) {
       // console.log(`index.js: SUCCESS`)
       res.setHeader("Content-Type", "image/svg+xml");
       res.setHeader("Vary", "Accept-Encoding");
-      return res.send(renderBadgesCard(badges, theme));
+      return res.send(renderBadgesCard(badges, theme, maxResults));
       
     } catch (err) {
       // console.log(`index.js: ERROR: ${err.message}`)

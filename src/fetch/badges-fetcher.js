@@ -8,20 +8,20 @@ const {
 const fetchCredlyBadges = (username) => {
     return axios({
       method: "get",
-      url: `https://www.credly.com/users/${username}/badges?sort=most_popular`,
+      url: `https://www.credly.com/users/${username}/badges?sort=${sort}`,
       headers: {
         Accept: "application/json",
       },
     });
   };
 
-async function fetchBadges(username){
+async function fetchBadges(username, sort){
 
     if (!username) throw new MissingParamError(["username"]);
-    // console.log(username);
+    if (!sort) sort = "most_popular";
 
     try {
-        let res = await fetchCredlyBadges(username);
+        let res = await fetchCredlyBadges(username, sort);
         // console.log(res.data);
         return res.data;
     } catch (error) {
