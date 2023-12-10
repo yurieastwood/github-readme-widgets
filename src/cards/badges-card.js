@@ -71,7 +71,7 @@ const renderBadgesCard = (badges, theme="default", maxResults=10) => {
 
     // returns theme based colors with proper overrides and defaults
     const title = `Certifications and Exams`;
-    const totalCount = badges.metadata.total_count;
+    //const totalCount = badges.metadata.total_count;
 
     // console.log(theme);
 
