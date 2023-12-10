@@ -8,7 +8,7 @@ const {
 const fetchCredlyBadges = (username) => {
     return axios({
       method: "get",
-      url: `https://www.credly.com/users/${username}/badges?sort=${sort}`,
+      url: `https://www.credly.com/users/${username}/badges`,
       headers: {
         Accept: "application/json",
       },
