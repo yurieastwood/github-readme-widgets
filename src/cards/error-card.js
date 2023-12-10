@@ -7,7 +7,7 @@ const renderError = (message, secondaryMessage="") => {
                 .gray { fill: #858585 }
             </style>
             <text x="25" y="45" class="text">Something went wrong! file an issue at </br> https://github.com/mechdeveloper/credly-readme-widget</text>
-            <br>
+            </br>
             <text data-testid="message" x="25" y="55" class="text small">
                 <tspan x="25" dy="18">${message}</tspan>
                 <br>
