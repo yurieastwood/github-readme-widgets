@@ -65,14 +65,13 @@ function getCardColors({
   return { titleColor, iconColor, textColor, bgColor, borderColor };
 }
 
-const renderBadgesCard = (badges, theme="default") => {
+const renderBadgesCard = (badges, theme="default", maxResults=10) => {
     // console.log(`badges-card: BEGIN`);
     // const theme = "default";
 
     // returns theme based colors with proper overrides and defaults
     const title = `Certifications and Exams`;
     const totalCount = badges.metadata.total_count;
-    if (!maxResults) maxResults = totalCount;
 
     // console.log(theme);
 
