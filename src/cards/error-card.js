@@ -10,7 +10,7 @@ const renderError = (message, secondaryMessage="") => {
             </br>
             <text data-testid="message" x="25" y="55" class="text small">
                 <tspan x="25" dy="18">${message}</tspan>
-                <br>
+                </br>
                 <tspan x="25" dy="18">${secondaryMessage}</tspan>
             </text>
         </div>
