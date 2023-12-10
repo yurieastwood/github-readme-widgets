@@ -96,7 +96,7 @@ const renderBadgesCard = (badges, theme="default", maxResults=10) => {
 
     // badges.data.forEach(function (item, i ) {
     // for (const item of badges.data) {
-    for (let i = 0; i < maxResults; i++) {
+    for (let i = 0; i < 5; i++) {
         certItems += `<text x="0" y="${certItemPropY}" class="cert-text">${badges.data[i].badge_template.name}</text>`;
         certItemPropY += 20;   
     }
