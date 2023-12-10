@@ -104,8 +104,8 @@ const renderBadgesCard = (badges, theme="default", maxResults=10) => {
     let badgesCard = `
         <svg version="1.1"
             width="595" 
-            height="195"
-            viewBox="0 0 595 195"
+            height="215"
+            viewBox="0 0 595 215"
             fill="#ffffff"
             xmlns="http://www.w3.org/2000/svg" 
             xmlns:xlink="http://www.w3.org/1999/xlink" >
